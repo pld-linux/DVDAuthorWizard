@@ -1,4 +1,5 @@
 Summary:	KDE DVD Authoring Wizard
+Summary(pl.UTF-8):	Narzędzie KDE do przygotowywania DVD
 Name:		DVDAuthorWizard
 Version:	1.4.3
 Release:	0.1
@@ -17,10 +18,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This wizard will allow you to create a DVD from one or more DVD compatible 
-MPEG-2 files. It is designed to be very easy to use. All you need to do is 
-add one or multiple files to the playlist and answer the questions that 
-follow.
+This wizard will allow you to create a DVD from one or more DVD
+compatible MPEG-2 files. It is designed to be very easy to use. All
+you need to do is add one or multiple files to the playlist and answer
+the questions that follow.
+
+%description -l pl.UTF-8
+To narzędzie pozwala utworzyć DVD z jednego lub większej liczby plików
+MPEG-2 kompatybilnych z DVD. Zostało zaprojektowane z myślą o bardzo
+łatwym użyciu. Wszystko co trzeba zrobić to dodać jeden lub więcej
+plików do playlisty i odpowiadać na kolejne pytania.
 
 %prep
 %setup -q
@@ -34,8 +41,11 @@ cp -r bin share $RPM_BUILD_ROOT%{_prefix}
 
 cat > $RPM_BUILD_ROOT%{_desktopdir}/kde/KDVDAuthoringWizard.desktop << EOF
 [Desktop Entry]
+Encoding
 Name=KDE DVDAuthor Wizard
+Name[pl]=Narzędzie KDE do tworzenia DVD
 GenericName=DVD Authoring Application
+GenericName[pl]=Aplikacja do tworzenia DVD
 Exec=kmdr-executor '%{_prefix}/bin/DVDAuthorWizard.kmdr'
 Type=Application
 icon=dvd_unmount
