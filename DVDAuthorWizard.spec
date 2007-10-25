@@ -1,12 +1,12 @@
 Summary:	KDE DVD Authoring Wizard
 Summary(pl.UTF-8):	Narzędzie KDE do przygotowywania DVD
 Name:		DVDAuthorWizard
-Version:	1.4.3
+Version:	1.4.6
 Release:	0.1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://dl.sourceforge.net/dvdauthorwizard/%{name}-%{version}.tar.bz2
-# Source0-md5:	4d7c4920a46fb448c787c38c728e7c8b
+# Source0-md5:	2998a159c515c6dd67b4da7af2810e52
 URL:		http://dvdauthorwizard.sourceforge.net/
 Requires:	ImageMagick >= 6.2
 Requires:	dvdauthor >= 0.6.11
